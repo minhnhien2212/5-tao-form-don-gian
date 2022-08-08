@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Form Cơ Bản</title>
+
+</head>
+<body>
+    <form method="post">
+        <h1>SỞ THÍCH CỦA BẠN</h1>
+        <label>Họ và Tên:</label>
+        <input type="text" placeholder="Nguyễn Văn A" name="ho-va-ten"><br><br>
+        <label>Email:</label>
+        <input type="email" placeholder="nguyenvana@gmail.com" name="email"><br><br>
+        <label>Sở thích:</label><br>
+        <input type="checkbox" name="so-thich-1" value="the-thao">Thể Thao
+        <input type="checkbox" name="so-thich-2" value="am-nhac">Âm nhạc
+        <input type="checkbox" name="so-thich-3" value="doc-sach">Đọc sách
+        <input type="checkbox" name="so-thich-4" value="luot-web">Lướt web<br>
+        <input type="checkbox" name="so-thich-5" value="choi-game">Chơi game
+        <input type="checkbox" name="so-thich-6" value="dien-anh">Điện ảnh
+        <input type="checkbox" name="so-thich-7" value="du-lich">Du lịch<br><br>
+        <input type="submit" value="Gửi thông tin">
+        <input type="reset" value="Nhập lại"><br><br><br>
+    </form>
+
+    <form>
+        <h1>ĐĂNG KÝ HỌC VIÊN</h1>
+        <label>Họ và tên</label>
+        <input type="text" placeholder="Nguyễn Văn B" name="ho-va-ten"><br><br>
+        <label>Ngày sinh</label>
+        <input type="text" placeholder="22/12/2004" name="ngay-sinh"><br><br>
+        <label>Giới tính</label>
+        <input type="radio" name="gioi-tinh" value="nam"> Nam
+        <input type="radio" name="gioi-tinh" value="nu"> Nữ<br><br>
+        <label>Địa chỉ:</label><br>
+        <textarea rows="5" cols="30"></textarea><br><br>
+        <label>Lớp:</label>
+        <select>
+            <option value="12C1">12C1</option>
+            <option value="12C2">12C2</option>
+            <option value="12C3">12C3</option>
+            <option value="12C4">12C4</option>
+            <option value="12C5">12C5</option>
+            <option value="12C6">12C6</option>
+            <option value="12C7">12C7</option>
+        </select><br><br>
+        <label>Email:</label>
+        <input type="email" placeholder="nguyenvana@gmail.com" name="email"><br><br>
+        <label>Điện thoại</label>
+        <input type="number" placeholder="(+84)900101921" name="email"><br><br>
+    </form>
+</body>
+</html>
