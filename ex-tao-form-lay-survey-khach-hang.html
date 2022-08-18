@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Research Survey</title>
+    <style>
+        #table-survey tr:nth-child(even){background-color: #f2f2f2;}
+    </style>
+
+<body>
+
+    <!--Phần tiêu đề h1 và h2-->
+    <div style="padding-bottom: 10px; margin-left: 10px; margin-bottom: 20px; border-bottom-style: solid; border-width: 1px;">
+        <h1 style="margin-bottom: 10px;">Market Research Survey</h1>
+        <h2 style="font-family: Arial; font-weight: lighter; font-size: 18px;">Please take a few moments to complete this satisfaction survey</h2>
+    </div>
+
+
+    <div>
+        <form>
+
+        <!--What is your age range?-->
+            <label style="font-weight: bold;">What is your age range?</label><br>
+            <select style="margin-top: 15px; width: 150px;">
+            <option name="age-range" value="18-24">18-24</option>
+            <option name="age-range" value="25-34">25-34</option>
+            <option name="age-range" value="35-50">35-50</option>
+            <option name="age-range" value="50+">50+</option>
+            </select><br><br>
+
+        <!--What is your yearly income range?-->
+            <label style="font-weight: bold;">What is your yearly income range?</label><br>
+            <select style="margin-top: 15px; width: 150px;">
+            <option value="0-25">$0 - $25,000</option>
+            <option value="25-50">$25,000 - $50,000</option>
+            <option value="50-100">$50,000 - $100,000</option>
+            <option value="100+">$100000+</option>
+            </select><br><br>
+
+        <!--Gender identity-->
+            <label style="margin-bottom: 10px; font-weight: bold;">Gender identity</label><br>
+            <input style="margin-top: 10px; margin-bottom: 10px;" type="radio" value="male">Male<br>
+            <input style="margin-top: 5px; margin-bottom: 10px;" type="radio" value="female">Female<br>
+            <input style="margin-top: 5px; margin-bottom: 10px;" type="radio" value="nonbinary">Nonbinary<br>
+            <input style="margin-top: 5px; margin-bottom: 0;" type="radio" value="other">Other<br><br>
+
+        <!--Which of the following products have your purchased in the last 2 months.-->
+            <label style="font-weight: bold;">Which of the following products have your purchased in the last 2 months. Please check all that apply.</label><br>
+            <input style="margin-top: 10px; margin-bottom: 10px;" type="checkbox" name="product-1" value="product-1">Product 1<br>
+            <input style="margin-top: 10px; margin-bottom: 10px;" type="checkbox" name="product-2" value="product-2">Product 2<br>
+            <input style="margin-top: 10px; margin-bottom: 0;" type="checkbox" name="product-3" value="product-3">Product 3<br><br>
+
+        <!--How often would you use our new product?-->
+            <label style="margin-bottom: 10px; font-weight: bold;">How often would you use our new product?</label><br>
+            <input style="margin-top: 10px; margin-bottom: 10px;" type="radio" name="frequency" value="daily">Daily<br>
+            <input style="margin-top: 10px; margin-bottom: 10px;" type="radio" name="frequency" value="weekly">Weekly<br>
+            <input style="margin-top: 10px; margin-bottom: 20px;" type="radio" name="frequency" value="monthly">Monthly<br>
+
+        <!--Input text: How much would you pay for the new product?-->
+        <table>
+            <tr>
+                <label style="margin-bottom: 20px; font-weight: bold;">How much would you pay for the new product?</label><br><br>
+                <th style="margin-top: 10px;">&dollar;</th>
+                <th style="margin-top: 10px;"><input type="number" style="width: 100px; margin-left: 10px;"></th>
+                <th style="margin-top: 10px;"><input type="number" style="width: 100px; margin-left: 10px;"></th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td>Cents</td>
+            </tr>
+        </table><br>
+
+        <!--Textarea: What features would you like to see in the new product.-->
+            <label style="margin-top: 20px; margin-bottom: 20px; font-weight: bold;">What features would you like to see in the new product.</label><br>
+            <textarea rows="8px" cols="50px"; style="margin-top: 15px">I would love it it if the new product has...</textarea>
+        </form><br>
+
+        <table id="table-survey" style="margin-left: 10px;">
+            <label style="font-weight: bold;"> Please rate your level of agreement with the following statements.</label>
+
+            <tr>
+                <td></td>
+                <th style="width: 300px; height:50px;">Strongly Disagree</th>
+                <th style="width:300px;">Disagree</th>
+                <th style="width: 300px;">Agree</th>
+                <th style="width:300px;">Strongly Agree</th>
+
+            </tr>
+
+            <tr>
+                <th style="width: 300px; text-align: left">Our products are priced fairly</th>
+                <th style="width: 150px;"><input type="radio" name="price" value="strongly-disagree"><br>1</th>
+                <th style="width: 150px;"><input type="radio" name="price" value="disagree"><br>2</th>
+                <th style="width: 150px;"><input type="radio" name="price" value="agree"><br>3</th>
+                <th style="width: 150px;"><input type="radio" name="price" value="strongly-agree"><br>4</th>
+            </tr>
+
+            <tr>
+                <th style="width: 300px; text-align: left">Our products are high quality</th>
+                <th style="width: 150px;"><input type="radio" name="price" value="strongly-disagree"><br>1</th>
+                <th style="width: 150px;"><input type="radio" name="price" value="disagree"><br>2</th>
+                <th style="width: 150px;"><input type="radio" name="price" value="agree"><br>3</th>
+                <th style="width: 150px;"><input type="radio" name="price" value="strongly-agree"><br>4</th>
+            </tr>
+
+            <tr>
+                <th style="width: 300px; text-align: left">You would recommend our product to a friend or coworker</th>
+                <th style="width: 150px;"><input type="radio" name="price" value="strongly-disagree"><br>1</th>
+                <th style="width: 150px;"><input type="radio" name="price" value="disagree"><br>2</th>
+                <th style="width: 150px;"><input type="radio" name="price" value="agree"><br>3</th>
+                <th style="width: 150px;"><input type="radio" name="price" value="strongly-agree"><br>4</th>
+            </tr>
+
+        </table>
+    </div>
+
+    <input id="thong-bao-thanh-cong" style="margin-top: 20px; width: 100px; height: 20; text-align: center" type="submit" value="Submit">
+</body>
+</html>
